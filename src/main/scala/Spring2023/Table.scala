@@ -40,6 +40,7 @@ case class Table[T](xs: List[T]) {
    */
   def filter(p: T => Boolean): Table[T] = /** SOLUTION END */ {
     lensFilter[T](p)(identity)
+    //instead of identity we can also use (t => t)
   }
 
 
